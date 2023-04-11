@@ -51,6 +51,25 @@ img {
     display: block;
 }
 
+.btn {
+    background-color: #8CBC00;
+    display: block;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-out;
+}
+
+.btn:hover {
+    background-color: #769C02;
+}
+
+/* Utilidades */
+.text-center {
+    text-align: center;
+}
+
 /* Header y Navegación */
 .nombre-sitio {
     margin-top: 5rem;
@@ -83,7 +102,9 @@ img {
 /* Categoria */
 .categorias {
     padding-top: 5rem;
+    padding-bottom: 5rem;
 }
+
 .categorias h2 {
     text-align: center;
 }
@@ -109,18 +130,84 @@ img {
 
 /* Bloque Nosotros */
 .sobre-nosotros {
-    background-image: linear-gradient( to right, transparent 50%, #037bc0 50%, #037bc0 100% ), url(../img/nosotros.jpg);
+    background-image: linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100%), url(../img/nosotros.jpg);
     padding: 10rem 0;
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 100%, 120rem;
 }
+
 .sobre-nosotros-grid {
     display: flex;
     justify-content: flex-end;
 }
+
 .texto-nosotros {
     flex-basis: 50%;
     padding-left: 7rem;
     color: #FFFFFF;
+}
+
+/* Listado de Productos */
+.contenido-principal {
+    padding-top: 5rem;
+}
+
+.listado-productos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+}
+
+.producto:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+.producto:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.producto:nth-child(3) {
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+.producto:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.producto:nth-child(5) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.producto:nth-child(6) {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.producto {
+    background-color: #037bc0;
+}
+
+.texto-producto h3 {
+    margin: 0;
+}
+
+.texto-producto p {
+    margin: 0 0 .5rem 0;
+}
+
+.texto-producto {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 2rem;
+}
+
+.texto-producto .precio {
+    font-size: 2.8rem;
+    font-weight: 900;
 }
