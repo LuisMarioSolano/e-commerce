@@ -241,9 +241,12 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin-bottom: 3rem;
 }
 
 .footer-menu a {
     display: block;
+}
+
+.copyright {
+    padding-top: 5rem;
 }
